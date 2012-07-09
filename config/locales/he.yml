@@ -1,0 +1,77 @@
+en:
+  refinery:
+    plugins:
+      refinerycms_inquiries:
+        title: פניות
+        description: מספק טופס יצירת קשר ושומר פניות
+    inquiries:
+      inquiries:
+        new:
+          send: שלח הודעה
+          privacy_policy: אנו שומרים על הפרטיות שלך
+      admin:
+        inquiries:
+          delete: הסר פניה זו לצמיתות
+          inquiry:
+            read_inquiry: קרא את הפניה
+            said: אמר
+            mark_as_spam: סמן כדואר זבל
+            mark_as_ham: העבר לדואר נכנס
+          submenu:
+            inbox: דואר נכנס
+            spam: דואר זבל
+            update_notified: עדכן מי מקבל עידכון
+            edit_confirmation_email: ערוך כתובת מייל אישור
+          index:
+            no_inquiries: לא נתקבלו פניות עדיין.
+            no_spam: הידד!, אין לך דואר זבל.
+          show:
+            details: פרטים
+            age: גיל
+            actions: פעולות
+            back_to_all_inquiries: חזור לכל הפניות
+            spam: דואר זבל
+            spam_yes: 'כן'
+            inquiry: פניה
+            to: אל
+            from: מאת
+            click_to_email: לחץ לשליחה לכתובת זו.
+            phone: טלפון
+            date: תאריך
+            message: הודעה
+        settings:
+          notification_recipients_form:
+            inquiry_settings_value_name: שלח דיווחים ל 
+            hint: כשפניה חדשה תכנס Refinery תשלח מייל אליך.
+            example: "הזן את כתובת/כתובות המייל שלך לדוגמא: jack@work.com, jill@office.com"
+          confirmation_email_form:
+            to: אל
+            from: מאת
+            subject: נושא
+            click_to_edit_subject: לחץ כאן לעריכת הנושא.
+            explanation: בכל פניה של גולש לאתר, Refinery תשלח הודעת מייל לגולש שמאשרת את פנייתו.
+            below_edit_email_sent: מתחת ניתן לערוך את הדואר שנשלח.
+            the_customer_making_inquiry: הלקוח שמבצע את הפניה.
+            message: הודעה
+            note: "הערה: השתמש בטקסט  %name% היכן שברצונך להציג את שם הלקוח "
+      inquiry_mailer:
+        notification:
+          greeting: שלום לך
+          you_recieved_new_inquiry: נתקבלה פניה חדשה מהאתר שלך.
+          inquiry_starts: --- תחילת פניה ---
+          inquiry_ends: --- סיום פניה ---
+          from: מאת
+          email: דואר אלקטרוני
+          phone: טלפון
+          message: הודעה
+          closing_line: בברכה
+          ps: לידיעתך, כל הפניות נשמרות באזור הפניות באתר, תוכל לבדוק אותם תמיד אחר כך.
+  activerecord:
+    models:
+      refinery/inquiries/inquiry: פניה
+    attributes:
+      refinery/inquiries/inquiry:
+        name: שם
+        email: דואר אלקטרוני
+        phone: טלפון
+        message: הודעה
